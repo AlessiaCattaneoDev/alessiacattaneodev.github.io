@@ -1,16 +1,3 @@
-// ─── Bootstrap Variable Overrides ───────────────────────────────────────────
-$primary:                #FF6F59;
-$secondary:              #C96B5A;
-$body-bg:                #F7F3F3;
-$body-color:             #181010;
-$font-family-sans-serif: 'IBM Plex Sans', sans-serif;
-$font-family-base:       'IBM Plex Sans', sans-serif;
-$border-radius:          0.75rem;
-$border-radius-lg:       1.25rem;
-$border-radius-xl:       1.5rem;
-$link-color:             #FF6F59;
-$link-decoration:        none;
-
 // ─── Brand Tokens ────────────────────────────────────────────────────────────
 $brand:        #FF6F59;
 $brand-light:  #F5897A;
@@ -22,6 +9,8 @@ $ink-700:      #2C1A18;
 $ink-500:      #7A6360;
 $ink-300:      #C4ABA8;
 $ink-100:      #FDFDFD;
+
+$font-family-base: 'IBM Plex Sans', sans-serif;
 
 // ─── Spacing ─────────────────────────────────────────────────────────────────
 $site-px:    1.5rem;

@@ -20,6 +20,7 @@
 
   <!-- ── NAV ── -->
   <header class="nav-wrap" style="position:fixed;top:0;left:0;right:0;z-index:50;">
+    <input type="checkbox" id="navToggle" class="nav-toggle-input">
     <div class="site-container d-flex align-items-center justify-content-between" style="height:4rem;">
       <a href="index.html" style="font-weight:700;font-size:1rem;color:#181010;text-decoration:none;letter-spacing:-.02em;">Alessia Cattaneo</a>
       <nav class="d-none d-md-flex align-items-center gap-4">
@@ -30,16 +31,15 @@
       </nav>
       <div class="d-flex align-items-center gap-2">
         <a href="contattami.html" class="btn-p d-none d-md-inline-flex" style="padding:10px 20px;font-size:.875rem;">Parliamo →</a>
-        <button id="hamburger" class="d-flex d-md-none flex-column p-2 bg-transparent border-0"
-                style="gap:.375rem;" aria-label="Menu"
-                data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+        <label for="navToggle" id="hamburger" class="d-flex d-md-none flex-column"
+               style="gap:.375rem;padding:.5rem;background:transparent;border:none;cursor:pointer;" aria-label="Apri menu">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
-        </button>
+        </label>
       </div>
     </div>
-    <div class="collapse d-md-none mobile-menu" id="mobileMenu">
+    <div class="mobile-menu" id="mobileMenu">
       <a href="index.html#servizi" class="nav-a">Servizi</a>
       <a href="index.html#chi-sono" class="nav-a">Chi sono</a>
       <a href="cv.html" class="nav-a">CV</a>
@@ -209,7 +209,6 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="assets/js/email.js"></script>
 </body>

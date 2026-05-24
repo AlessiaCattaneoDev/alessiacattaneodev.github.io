@@ -1,8 +1,5 @@
-// ─── 1. Variables (must come before Bootstrap) ───────────────────────────────
+// ─── 1. Variables ────────────────────────────────────────────────────────────
 @import "variables";
 
-// ─── 2. Bootstrap ────────────────────────────────────────────────────────────
-@import "../../node_modules/bootstrap/scss/bootstrap";
-
-// ─── 3. Custom components ────────────────────────────────────────────────────
+// ─── 2. Custom components ────────────────────────────────────────────────────
 @import "components";
