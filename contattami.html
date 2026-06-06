@@ -19,20 +19,20 @@
   <a href="#contenuto-principale" class="skip-link">Salta al contenuto principale</a>
 
   <!-- ── NAV ── -->
-  <header class="nav-wrap" style="position:fixed;top:0;left:0;right:0;z-index:50;">
+  <header class="nav-wrap">
     <input type="checkbox" id="navToggle" class="nav-toggle-input">
-    <div class="site-container d-flex align-items-center justify-content-between" style="height:4rem;">
-      <a href="index.html" style="font-weight:700;font-size:1rem;color:#181010;text-decoration:none;letter-spacing:-.02em;">Alessia Cattaneo</a>
+    <div class="site-container d-flex align-items-center justify-content-between nav-inner">
+      <a href="index.html" class="nav-brand">Alessia Cattaneo</a>
       <nav class="d-none d-md-flex align-items-center gap-4">
-        <a href="index.html#servizi" class="nav-a">Servizi</a>
+        <a href="index.html#servizi"  class="nav-a">Servizi</a>
         <a href="index.html#chi-sono" class="nav-a">Chi sono</a>
-        <a href="cv.html" class="nav-a">CV</a>
-        <a href="contattami.html" class="nav-a" style="color:#FF6F59;">Contattami</a>
+        <a href="cv.html"             class="nav-a">CV</a>
+        <a href="contattami.html"     class="nav-a nav-a-active">Contattami</a>
       </nav>
       <div class="d-flex align-items-center gap-2">
-        <a href="contattami.html" class="btn-p d-none d-md-inline-flex" style="padding:10px 20px;font-size:.875rem;">Parliamo →</a>
-        <label for="navToggle" id="hamburger" class="d-flex d-md-none flex-column"
-               style="gap:.375rem;padding:.5rem;background:transparent;border:none;cursor:pointer;" aria-label="Apri menu">
+        <a href="contattami.html" class="btn-p btn-p-sm d-none d-md-inline-flex">Parliamo →</a>
+        <label for="navToggle" id="hamburger" class="d-flex d-md-none flex-column hamburger-btn"
+               aria-label="Apri menu">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -40,40 +40,40 @@
       </div>
     </div>
     <div class="mobile-menu" id="mobileMenu">
-      <a href="index.html#servizi" class="nav-a">Servizi</a>
+      <a href="index.html#servizi"  class="nav-a">Servizi</a>
       <a href="index.html#chi-sono" class="nav-a">Chi sono</a>
-      <a href="cv.html" class="nav-a">CV</a>
-      <a href="contattami.html" class="nav-a" style="color:#FF6F59;">Contattami</a>
+      <a href="cv.html"             class="nav-a">CV</a>
+      <a href="contattami.html"     class="nav-a nav-a-active">Contattami</a>
     </div>
   </header>
 
-  <main id="contenuto-principale" style="padding-top:4rem;">
+  <main id="contenuto-principale" class="main-content">
 
     <!-- ── Hero strip ── -->
-    <section style="background:#F7F3F3;padding:4rem 0 3rem;">
+    <section class="section-hero">
       <div class="site-container">
         <span class="label">Contattami</span>
-        <h1 class="heading-xl mt-3 mb-3" style="color:#181010;">
+        <h1 class="heading-xl mt-3 mb-3">
           Parliamo del tuo<br>
-          <span style="color:#FF6F59;">progetto.</span>
+          <span class="accent">progetto.</span>
         </h1>
-        <p style="color:#7A6360;font-size:1.05rem;line-height:1.75;max-width:540px;margin:0;">
+        <p class="contact-intro">
           Hai un'idea, un problema da risolvere o vuoi capire se l'AI può aiutarti? Scrivimi. Rispondo entro 24 ore.
         </p>
       </div>
     </section>
 
-    <div style="height:1px;background:rgba(24,16,16,.07);"></div>
+    <div class="divider"></div>
 
     <!-- ── Content ── -->
-    <section style="padding:3rem 0 5rem;background:#F7F3F3;">
+    <section class="section-content">
       <div class="site-container">
         <div class="row g-5 align-items-start">
 
           <!-- Form column -->
           <div class="col-12 col-lg-7">
-            <div style="background:#FDFDFD;border:1px solid rgba(24,16,16,.07);border-radius:20px;padding:2.5rem;">
-              <h2 class="heading-md mb-4" style="color:#181010;">Inviami un messaggio</h2>
+            <div class="form-card">
+              <h2 class="heading-md mb-4">Inviami un messaggio</h2>
 
               <form id="contactForm" novalidate>
                 <div class="row g-3 mb-0">
@@ -102,17 +102,17 @@
                   <textarea class="contact-input" id="message" name="message" required placeholder="Raccontami il tuo progetto, il problema che vuoi risolvere o cosa ti serve…"></textarea>
                 </div>
 
-                <div class="d-flex align-items-start gap-2 mb-4" style="font-size:.82rem;color:#7A6360;line-height:1.6;">
-                  <input type="checkbox" id="privacy" name="privacy" required style="margin-top:3px;accent-color:#FF6F59;flex-shrink:0;" />
+                <div class="d-flex align-items-start gap-2 mb-4 privacy-row">
+                  <input type="checkbox" id="privacy" name="privacy" required class="privacy-checkbox" />
                   <label for="privacy">
-                    Ho letto e accetto la <a href="privacy.html" target="_blank" style="color:#FF6F59;">Privacy Policy</a>.
+                    Ho letto e accetto la <a href="privacy.html" target="_blank" class="link-accent">Privacy Policy</a>.
                   </label>
                 </div>
 
                 <button type="submit" id="contactSubmit" class="contact-submit">
                   Invia messaggio →
                 </button>
-                <p id="contactMsg" style="display:none;margin-top:1rem;font-size:.875rem;"></p>
+                <p id="contactMsg" class="form-msg"></p>
               </form>
             </div>
           </div>
@@ -121,37 +121,37 @@
           <div class="col-12 col-lg-5">
 
             <!-- Contatti diretti -->
-            <div style="background:#FDFDFD;border:1px solid rgba(24,16,16,.07);border-radius:16px;padding:1.75rem;margin-bottom:1.5rem;">
+            <div class="cv-section-card">
               <div class="cv-section-title">Contatti diretti</div>
               <div class="d-flex flex-column gap-4">
 
                 <div class="d-flex align-items-start gap-3">
-                  <div style="width:40px;height:40px;border-radius:10px;background:rgba(255,111,89,.08);border:1px solid rgba(255,111,89,.16);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                  <div class="contact-icon">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF6F59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                   </div>
                   <div>
-                    <div style="font-size:.75rem;color:#C4ABA8;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.2rem;">Email</div>
-                    <a href="mailto:alessiacattaneo.developer@gmail.com" style="font-size:.9rem;color:#3D2420;word-break:break-all;">alessiacattaneo.developer@gmail.com</a>
+                    <div class="cv-meta-label">Email</div>
+                    <a href="mailto:alessiacattaneo.developer@gmail.com" class="contact-info-text">alessiacattaneo.developer@gmail.com</a>
                   </div>
                 </div>
 
                 <div class="d-flex align-items-start gap-3">
-                  <div style="width:40px;height:40px;border-radius:10px;background:rgba(255,111,89,.08);border:1px solid rgba(255,111,89,.16);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                  <div class="contact-icon">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="#0A66C2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
                   </div>
                   <div>
-                    <div style="font-size:.75rem;color:#C4ABA8;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.2rem;">LinkedIn</div>
-                    <a href="https://www.linkedin.com/in/alessia--cattaneo/" target="_blank" rel="noopener" style="font-size:.9rem;color:#FF6F59;">Alessia Cattaneo</a>
+                    <div class="cv-meta-label">LinkedIn</div>
+                    <a href="https://www.linkedin.com/in/alessia--cattaneo/" target="_blank" rel="noopener" class="contact-info-accent">Alessia Cattaneo</a>
                   </div>
                 </div>
 
                 <div class="d-flex align-items-start gap-3">
-                  <div style="width:40px;height:40px;border-radius:10px;background:rgba(255,111,89,.08);border:1px solid rgba(255,111,89,.16);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                  <div class="contact-icon">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF6F59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                   </div>
                   <div>
-                    <div style="font-size:.75rem;color:#C4ABA8;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.2rem;">Risposta</div>
-                    <span style="font-size:.9rem;color:#3D2420;">Entro 24 ore lavorative</span>
+                    <div class="cv-meta-label">Risposta</div>
+                    <span class="contact-info-text">Entro 24 ore lavorative</span>
                   </div>
                 </div>
 
@@ -159,34 +159,34 @@
             </div>
 
             <!-- Cosa fare -->
-            <div style="background:rgba(255,111,89,.04);border:1px solid rgba(255,111,89,.14);border-radius:16px;padding:1.75rem;margin-bottom:1.5rem;">
-              <div style="font-weight:700;color:#181010;font-size:.95rem;margin-bottom:1rem;">Posso aiutarti se…</div>
+            <div class="cv-highlight-card">
+              <div class="highlight-card-title">Posso aiutarti se…</div>
               <div class="d-flex flex-column gap-2">
-                <div class="d-flex align-items-start gap-2" style="font-size:.875rem;color:#3D2420;">
-                  <span style="color:#FF6F59;font-weight:700;flex-shrink:0;">→</span>
+                <div class="d-flex align-items-start gap-2 list-item-dark">
+                  <span class="list-arrow">→</span>
                   Vuoi automatizzare processi ripetitivi con n8n
                 </div>
-                <div class="d-flex align-items-start gap-2" style="font-size:.875rem;color:#3D2420;">
-                  <span style="color:#FF6F59;font-weight:700;flex-shrink:0;">→</span>
+                <div class="d-flex align-items-start gap-2 list-item-dark">
+                  <span class="list-arrow">→</span>
                   Hai bisogno di un agente AI custom per la tua azienda
                 </div>
-                <div class="d-flex align-items-start gap-2" style="font-size:.875rem;color:#3D2420;">
-                  <span style="color:#FF6F59;font-weight:700;flex-shrink:0;">→</span>
+                <div class="d-flex align-items-start gap-2 list-item-dark">
+                  <span class="list-arrow">→</span>
                   Vuoi formare il tuo team sull'uso dell'AI
                 </div>
-                <div class="d-flex align-items-start gap-2" style="font-size:.875rem;color:#3D2420;">
-                  <span style="color:#FF6F59;font-weight:700;flex-shrink:0;">→</span>
+                <div class="d-flex align-items-start gap-2 list-item-dark">
+                  <span class="list-arrow">→</span>
                   Hai già un sistema AI da mantenere e supportare
                 </div>
-                <div class="d-flex align-items-start gap-2" style="font-size:.875rem;color:#3D2420;">
-                  <span style="color:#FF6F59;font-weight:700;flex-shrink:0;">→</span>
+                <div class="d-flex align-items-start gap-2 list-item-dark">
+                  <span class="list-arrow">→</span>
                   Vuoi capire se e come l'AI può aiutare il tuo business
                 </div>
               </div>
             </div>
 
             <!-- P.IVA -->
-            <p style="font-size:.78rem;color:#C4ABA8;margin:0;">P.IVA 02802310066 · Alessia Cattaneo</p>
+            <p class="footer-copy">P.IVA 02802310066 · Alessia Cattaneo</p>
 
           </div>
         </div>
@@ -196,16 +196,16 @@
   </main>
 
   <!-- ── Footer ── -->
-  <footer style="background:#F7F3F3;">
-    <div class="site-container d-flex flex-wrap justify-content-between align-items-center gap-3" style="padding-block:2.5rem;">
-      <span style="font-weight:700;font-size:.9rem;color:#181010;letter-spacing:-.01em;">Alessia Cattaneo</span>
-      <div class="d-flex flex-wrap gap-4 align-items-center" style="font-size:.8rem;color:#7A6360;">
-        <a href="index.html" style="color:#7A6360;text-decoration:none;">Home</a>
-        <a href="cv.html" style="color:#7A6360;text-decoration:none;">CV</a>
-        <a href="contattami.html" style="color:#FF6F59;text-decoration:none;">Contattami</a>
-        <a href="privacy.html" style="color:#7A6360;text-decoration:none;">Privacy</a>
+  <footer>
+    <div class="site-container d-flex flex-wrap justify-content-between align-items-center gap-3">
+      <span class="footer-brand">Alessia Cattaneo</span>
+      <div class="d-flex flex-wrap gap-4 align-items-center footer-links">
+        <a href="index.html"      class="footer-a">Home</a>
+        <a href="cv.html"         class="footer-a">CV</a>
+        <a href="contattami.html" class="footer-a footer-a-active">Contattami</a>
+        <a href="privacy.html"    class="footer-a">Privacy</a>
       </div>
-      <p style="font-size:.78rem;color:#C4ABA8;margin:0;">© 2025 Alessia Cattaneo · P.IVA 02802310066</p>
+      <p class="footer-copy">© 2025 Alessia Cattaneo · P.IVA 02802310066</p>
     </div>
   </footer>
 

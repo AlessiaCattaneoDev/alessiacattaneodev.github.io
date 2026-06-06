@@ -1,0 +1,49 @@
+@use 'variables' as *;
+
+.privacy-header {
+  border-bottom: 1px solid var(--bdr);
+  background: var(--bg);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.privacy-container {
+  max-width: 48rem;
+  margin-inline: auto;
+  padding-inline: $site-px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.privacy-back-link {
+  font-size: .85rem;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.privacy-main {
+  max-width: 48rem;
+  margin-inline: auto;
+  padding: 4rem $site-px 6rem;
+}
+
+.privacy-date  { font-size: .8rem; color: $ink-300; margin-bottom: .75rem; text-transform: uppercase; letter-spacing: .08em; }
+.privacy-intro { margin-top: 1rem; color: var(--muted); font-size: 1rem; line-height: 1.7; }
+
+.privacy-footer {
+  border-top: 1px solid var(--bdr);
+  padding: 2rem 0;
+}
+
+.privacy-footer-inner {
+  max-width: 48rem;
+  margin-inline: auto;
+  padding-inline: $site-px;
+  text-align: center;
+}
+
+.privacy-footer-note { font-size: .8rem; color: $ink-300; text-align: center; }

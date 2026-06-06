@@ -1,0 +1,91 @@
+@use 'variables' as *;
+
+// ─── Form elements ────────────────────────────────────────────────────────────
+.contact-form-label {
+  display: block;
+  font-size: .85rem;
+  font-weight: 600;
+  color: $ink-700;
+  margin-bottom: .4rem;
+}
+
+.contact-input {
+  width: 100%;
+  border: 1px solid rgba(24,16,16,.14);
+  border-radius: 10px;
+  padding: .75rem 1rem;
+  font-size: .9rem;
+  outline: none;
+  font-family: $font-base;
+  color: var(--fg);
+  background: #fff;
+  transition: border-color .15s, box-shadow .15s;
+  margin-bottom: 1rem;
+
+  &:focus {
+    border-color: $brand;
+    box-shadow: 0 0 0 3px rgba(255,111,89,.12);
+  }
+}
+
+textarea.contact-input { resize: vertical; min-height: 140px; }
+
+.contact-submit {
+  background: $brand;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 13px 30px;
+  font-size: .9375rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: $font-base;
+  transition: background .2s, transform .2s ease;
+
+  &:hover    { background: $brand-light; transform: translateY(-2px); }
+  &:active   { transform: translateY(0); }
+  &:disabled { opacity: .65; cursor: not-allowed; transform: none; }
+}
+
+// ─── Contact page layout ──────────────────────────────────────────────────────
+.contact-intro {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: 540px;
+  margin: 0;
+}
+
+.form-card {
+  background: var(--surface);
+  border: 1px solid var(--bdr);
+  border-radius: 20px;
+  padding: 2.5rem;
+}
+
+// ─── Privacy consent ──────────────────────────────────────────────────────────
+.privacy-row      { font-size: .82rem; color: var(--muted); line-height: 1.6; }
+.privacy-checkbox { margin-top: 3px; accent-color: $brand; flex-shrink: 0; }
+.link-accent      { color: $brand; }
+.form-msg         { display: none; margin-top: 1rem; font-size: .875rem; }
+
+// ─── Info sidebar ─────────────────────────────────────────────────────────────
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: $brand-pale;
+  border: 1px solid rgba(255,111,89,.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-info-text   { font-size: .9rem; color: $ink-600; word-break: break-all; }
+.contact-info-accent { font-size: .9rem; color: $brand; }
+
+// ─── Highlight card ───────────────────────────────────────────────────────────
+.highlight-card-title { font-weight: 700; color: var(--fg); font-size: .95rem; margin-bottom: 1rem; }
+.list-item-dark       { font-size: .875rem; color: $ink-600; }
+.list-arrow           { color: $brand; font-weight: 700; flex-shrink: 0; }

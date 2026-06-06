@@ -16,10 +16,10 @@
   <a href="#contenuto-principale" class="skip-link">Salta al contenuto principale</a>
 
   <!-- NAV -->
-  <header class="nav-wrap" style="position:fixed;top:0;left:0;right:0;z-index:50;">
+  <header class="nav-wrap">
     <input type="checkbox" id="navToggle" class="nav-toggle-input">
-    <div class="site-container d-flex align-items-center justify-content-between" style="height:4rem;">
-      <a href="index.html" style="font-weight:700;font-size:1rem;color:#181010;text-decoration:none;letter-spacing:-.02em;">Alessia Cattaneo</a>
+    <div class="site-container d-flex align-items-center justify-content-between nav-inner">
+      <a href="index.html" class="nav-brand">Alessia Cattaneo</a>
       <nav class="d-none d-md-flex align-items-center gap-4">
         <a href="#servizi"        class="nav-a">Servizi</a>
         <a href="#chi-sono"       class="nav-a">Chi sono</a>
@@ -27,9 +27,9 @@
         <a href="contattami.html" class="nav-a">Contattami</a>
       </nav>
       <div class="d-flex align-items-center gap-2">
-        <a href="contattami.html" class="btn-p d-none d-md-inline-flex" style="padding:10px 20px;font-size:.875rem;">Parliamo →</a>
-        <label for="navToggle" id="hamburger" class="d-flex d-md-none flex-column"
-               style="gap:.375rem;padding:.5rem;background:transparent;border:none;cursor:pointer;" aria-label="Apri menu">
+        <a href="contattami.html" class="btn-p btn-p-sm d-none d-md-inline-flex">Parliamo →</a>
+        <label for="navToggle" id="hamburger" class="d-flex d-md-none flex-column hamburger-btn"
+               aria-label="Apri menu">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -44,17 +44,17 @@
     </div>
   </header>
 
-  <main id="contenuto-principale" style="padding-top:4rem;">
+  <main id="contenuto-principale" class="main-content">
 
     <!-- HERO -->
-    <section class="hero-wrap" style="padding:6rem 0 5rem;">
+    <section class="hero-wrap">
       <div class="site-container">
         <span class="label">AI Automation Specialist &amp; Data Scientist</span>
-        <h1 class="heading-xl mt-3 mb-4" style="color:#181010;max-width:680px;">
-          Il lavoro che <em style="font-style:normal;color:#FF6F59;">rallenta</em><br>
+        <h1 class="heading-xl mt-3 mb-4 hero-heading">
+          Il lavoro che <em class="accent">rallenta</em><br>
           la tua crescita esiste.
         </h1>
-        <p style="color:#7A6360;font-size:1.05rem;line-height:1.75;max-width:520px;margin-bottom:2rem;">
+        <p class="hero-desc">
           Formo team sull'AI, costruisco soluzioni su misura — automazioni n8n, agenti AI, sistemi RAG — e le mantengo nel tempo. Il partner a 360° che ti serve ora.
         </p>
         <div class="d-flex flex-wrap gap-3">
@@ -64,63 +64,63 @@
       </div>
     </section>
 
-    <div style="height:1px;background:rgba(24,16,16,.07);"></div>
+    <div class="divider"></div>
 
     <!-- STATS -->
-    <div style="background:#FDFDFD;padding:3.5rem 0;">
+    <div class="stats-wrap">
       <div class="site-container">
         <div class="row g-4 text-center">
           <div class="col-6 col-md-3">
-            <div style="font-weight:800;font-size:2.5rem;letter-spacing:-.04em;color:#181010;margin-bottom:.4rem;">80<span style="color:#FF6F59;">%</span></div>
-            <p style="color:#7A6360;font-size:.875rem;line-height:1.6;margin:0;">riduzione media del lavoro manuale ripetitivo</p>
+            <div class="stat-num">80<span class="accent">%</span></div>
+            <p class="stat-desc">riduzione media del lavoro manuale ripetitivo</p>
           </div>
           <div class="col-6 col-md-3">
-            <div style="font-weight:800;font-size:2.5rem;letter-spacing:-.04em;color:#181010;margin-bottom:.4rem;">24<span style="color:#FF6F59;">/7</span></div>
-            <p style="color:#7A6360;font-size:.875rem;line-height:1.6;margin:0;">i tuoi workflow girano anche quando dormi</p>
+            <div class="stat-num">24<span class="accent">/7</span></div>
+            <p class="stat-desc">i tuoi workflow girano anche quando dormi</p>
           </div>
           <div class="col-6 col-md-3">
-            <div style="font-weight:800;font-size:2.5rem;letter-spacing:-.04em;color:#181010;margin-bottom:.4rem;">3<span style="color:#FF6F59;">x</span></div>
-            <p style="color:#7A6360;font-size:.875rem;line-height:1.6;margin:0;">capacità operativa senza aumentare il team</p>
+            <div class="stat-num">3<span class="accent">x</span></div>
+            <p class="stat-desc">capacità operativa senza aumentare il team</p>
           </div>
           <div class="col-6 col-md-3">
-            <div style="font-weight:800;font-size:2.5rem;letter-spacing:-.04em;color:#181010;margin-bottom:.4rem;">∞</div>
-            <p style="color:#7A6360;font-size:.875rem;line-height:1.6;margin:0;">supporto post go-live senza abbandonarti</p>
+            <div class="stat-num">∞</div>
+            <p class="stat-desc">supporto post go-live senza abbandonarti</p>
           </div>
         </div>
       </div>
     </div>
 
-    <div style="height:1px;background:rgba(24,16,16,.07);"></div>
+    <div class="divider"></div>
 
     <!-- CHI SONO -->
-    <section id="chi-sono" style="padding:5rem 0;background:#F7F3F3;">
+    <section id="chi-sono" class="section-pad section-bg">
       <div class="site-container">
         <span class="label">Chi sono</span>
-        <h2 class="heading-lg mt-3 mb-2" style="color:#181010;">Alessia Cattaneo</h2>
-        <p style="color:#FF6F59;font-weight:600;font-size:1rem;margin-bottom:2rem;">AI Automation Specialist &amp; Data Scientist</p>
+        <h2 class="heading-lg mt-3 mb-2">Alessia Cattaneo</h2>
+        <p class="subtitle">AI Automation Specialist &amp; Data Scientist</p>
         <div class="row g-5">
           <div class="col-md-6">
-            <p style="color:#7A6360;line-height:1.8;margin-bottom:1rem;">
+            <p class="text-muted-body">
               Ho studiato Informatica e approfondito l'intelligenza artificiale con un Master in AI e Agenti AI per il Business. Lavoro con PMI, startup, agenzie e freelance che vogliono affrontare l'AI senza improvvisare.
             </p>
-            <p style="color:#3D2420;line-height:1.8;margin-bottom:1.5rem;">
+            <p class="text-dark-body">
               Il mio approccio è data-driven: misuro il valore prima di costruire, e consegno soluzioni che durano nel tempo. Non scomparo dopo il go-live.
             </p>
             <a href="cv.html" class="btn-g">Vedi il mio CV</a>
           </div>
           <div class="col-md-6">
             <div class="d-flex flex-column gap-3">
-              <div style="background:#FDFDFD;border:1px solid rgba(24,16,16,.07);border-radius:12px;padding:1rem 1.25rem;">
-                <strong style="color:#181010;font-size:.875rem;">Formazione</strong>
-                <p style="color:#7A6360;font-size:.875rem;margin:.3rem 0 0;">Laurea in Informatica · Master in AI e Agenti AI per il Business (start2impact)</p>
+              <div class="info-card">
+                <strong class="info-card-title">Formazione</strong>
+                <p class="info-card-text">Laurea in Informatica · Master in AI e Agenti AI per il Business (start2impact)</p>
               </div>
-              <div style="background:#FDFDFD;border:1px solid rgba(24,16,16,.07);border-radius:12px;padding:1rem 1.25rem;">
-                <strong style="color:#181010;font-size:.875rem;">Specializzazione</strong>
-                <p style="color:#7A6360;font-size:.875rem;margin:.3rem 0 0;">Automazione con n8n, agenti AI, sistemi RAG, integrazioni API con modelli LLM</p>
+              <div class="info-card">
+                <strong class="info-card-title">Specializzazione</strong>
+                <p class="info-card-text">Automazione con n8n, agenti AI, sistemi RAG, integrazioni API con modelli LLM</p>
               </div>
-              <div style="background:#FDFDFD;border:1px solid rgba(24,16,16,.07);border-radius:12px;padding:1rem 1.25rem;">
-                <strong style="color:#181010;font-size:.875rem;">Target</strong>
-                <p style="color:#7A6360;font-size:.875rem;margin:.3rem 0 0;">PMI, Startup, Freelance, Agenzie, Enterprise</p>
+              <div class="info-card">
+                <strong class="info-card-title">Target</strong>
+                <p class="info-card-text">PMI, Startup, Freelance, Agenzie, Enterprise</p>
               </div>
             </div>
           </div>
@@ -128,51 +128,51 @@
       </div>
     </section>
 
-    <div style="height:1px;background:rgba(24,16,16,.07);"></div>
+    <div class="divider"></div>
 
     <!-- SERVIZI -->
-    <section id="servizi" style="padding:5rem 0;background:#F7F3F3;">
+    <section id="servizi" class="section-pad section-bg">
       <div class="site-container">
         <span class="label">I servizi</span>
-        <h2 class="heading-lg mt-3 mb-2" style="color:#181010;">Formo. Costruisco. <span style="color:#FF6F59;">Mantengo.</span></h2>
-        <p style="color:#7A6360;font-size:1.05rem;line-height:1.75;max-width:560px;margin-bottom:2.5rem;">
+        <h2 class="heading-lg mt-3 mb-2">Formo. Costruisco. <span class="accent">Mantengo.</span></h2>
+        <p class="section-desc">
           Tre servizi distinti, un'unica visione: essere il partner AI a 360° che ogni azienda deve avere in questo momento.
         </p>
         <div class="row g-4">
 
           <div class="col-md-4">
-            <div style="background:#FDFDFD;border:1px solid rgba(255,111,89,.15);border-radius:16px;padding:2rem;height:100%;display:flex;flex-direction:column;">
-              <span class="label mb-3" style="display:inline-block;">Per team e individui</span>
-              <h3 class="heading-md mb-2" style="color:#181010;">Formazione AI</h3>
-              <p style="color:#FF6F59;font-size:.85rem;font-weight:600;margin-bottom:1rem;">Impara · Applica · Cresci</p>
-              <p style="color:#7A6360;font-size:.875rem;line-height:1.8;flex-grow:1;margin-bottom:1.5rem;">
+            <div class="service-card">
+              <span class="label mb-3">Per team e individui</span>
+              <h3 class="heading-md mb-2">Formazione AI</h3>
+              <p class="service-tag">Impara · Applica · Cresci</p>
+              <p class="service-desc">
                 Per team e professionisti che vogliono usare l'AI davvero. Tool, applicazioni per settore, normativa e come ottimizzare quello che già usi.
               </p>
-              <a href="contattami.html" class="btn-g" style="justify-content:center;">Parliamo della formazione →</a>
+              <a href="contattami.html" class="btn-g btn-center">Parliamo della formazione →</a>
             </div>
           </div>
 
           <div class="col-md-4">
-            <div style="background:#FDFDFD;border:1px solid rgba(255,111,89,.3);border-radius:16px;padding:2rem;height:100%;display:flex;flex-direction:column;box-shadow:0 0 40px rgba(255,111,89,.06);">
-              <span class="label mb-3" style="display:inline-block;">Progetto completo</span>
-              <h3 class="heading-md mb-2" style="color:#181010;">AI Custom Build</h3>
-              <p style="color:#FF6F59;font-size:.85rem;font-weight:600;margin-bottom:1rem;">Analisi · Build · Consegna</p>
-              <p style="color:#7A6360;font-size:.875rem;line-height:1.8;flex-grow:1;margin-bottom:1.5rem;">
+            <div class="service-card-featured">
+              <span class="label mb-3">Progetto completo</span>
+              <h3 class="heading-md mb-2">AI Custom Build</h3>
+              <p class="service-tag">Analisi · Build · Consegna</p>
+              <p class="service-desc">
                 Workflow con n8n, agenti AI custom, sistemi RAG e integrazioni API. Dal problema concreto al sistema funzionante in produzione.
               </p>
-              <a href="contattami.html" class="btn-p" style="justify-content:center;">Parliamo del progetto →</a>
+              <a href="contattami.html" class="btn-p btn-center">Parliamo del progetto →</a>
             </div>
           </div>
 
           <div class="col-md-4">
-            <div style="background:#FDFDFD;border:1px solid rgba(255,111,89,.15);border-radius:16px;padding:2rem;height:100%;display:flex;flex-direction:column;">
-              <span class="label mb-3" style="display:inline-block;">Ricorrente</span>
-              <h3 class="heading-md mb-2" style="color:#181010;">Mantenimento AI</h3>
-              <p style="color:#FF6F59;font-size:.85rem;font-weight:600;margin-bottom:1rem;">Supporto · Aggiornamenti · Serenità</p>
-              <p style="color:#7A6360;font-size:.875rem;line-height:1.8;flex-grow:1;margin-bottom:1.5rem;">
+            <div class="service-card">
+              <span class="label mb-3">Ricorrente</span>
+              <h3 class="heading-md mb-2">Mantenimento AI</h3>
+              <p class="service-tag">Supporto · Aggiornamenti · Serenità</p>
+              <p class="service-desc">
                 Hosting, monitoraggio, aggiornamenti ai modelli, supporto prioritario e ottimizzazioni. Tu lavori, io tengo tutto in piedi.
               </p>
-              <a href="contattami.html" class="btn-g" style="justify-content:center;">Attiva il piano →</a>
+              <a href="contattami.html" class="btn-g btn-center">Attiva il piano →</a>
             </div>
           </div>
 
@@ -180,17 +180,17 @@
       </div>
     </section>
 
-    <div style="height:1px;background:rgba(24,16,16,.07);"></div>
+    <div class="divider"></div>
 
     <!-- CTA FINALE -->
-    <section style="padding:5rem 0;background:#F7F3F3;">
+    <section class="section-pad section-bg">
       <div class="site-container text-center">
         <span class="label">Pronto a iniziare?</span>
-        <h2 class="heading-lg mt-3 mb-3" style="color:#181010;">
+        <h2 class="heading-lg mt-3 mb-3">
           Parliamo del lavoro che<br>
-          <span style="color:#FF6F59;">vuoi smettere di fare.</span>
+          <span class="accent">vuoi smettere di fare.</span>
         </h2>
-        <p style="color:#7A6360;font-size:1.05rem;line-height:1.75;max-width:460px;margin:0 auto 2rem;">
+        <p class="cta-desc">
           Prima call gratuita. Analizziamo i tuoi processi e ti dico onestamente se posso aiutarti.
         </p>
         <div class="d-flex flex-wrap gap-3 justify-content-center">
@@ -205,14 +205,14 @@
   <!-- FOOTER -->
   <footer>
     <div class="site-container d-flex flex-wrap justify-content-between align-items-center gap-3">
-      <span style="font-weight:700;font-size:.9rem;color:#181010;letter-spacing:-.01em;">Alessia Cattaneo</span>
-      <div class="d-flex flex-wrap gap-4 align-items-center" style="font-size:.8rem;">
-        <a href="#servizi"        style="color:#7A6360;text-decoration:none;">Servizi</a>
-        <a href="cv.html"         style="color:#7A6360;text-decoration:none;">CV</a>
-        <a href="contattami.html" style="color:#7A6360;text-decoration:none;">Contattami</a>
-        <a href="privacy.html"    style="color:#7A6360;text-decoration:none;">Privacy</a>
+      <span class="footer-brand">Alessia Cattaneo</span>
+      <div class="d-flex flex-wrap gap-4 align-items-center footer-links">
+        <a href="#servizi"        class="footer-a">Servizi</a>
+        <a href="cv.html"         class="footer-a">CV</a>
+        <a href="contattami.html" class="footer-a">Contattami</a>
+        <a href="privacy.html"    class="footer-a">Privacy</a>
       </div>
-      <p style="font-size:.78rem;color:#C4ABA8;margin:0;">© 2025 Alessia Cattaneo · P.IVA 02802310066</p>
+      <p class="footer-copy">© 2025 Alessia Cattaneo · P.IVA 02802310066</p>
     </div>
   </footer>
 

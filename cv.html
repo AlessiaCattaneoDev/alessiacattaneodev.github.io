@@ -16,20 +16,20 @@
   <a href="#contenuto-principale" class="skip-link">Salta al contenuto principale</a>
 
   <!-- NAV -->
-  <header class="nav-wrap" style="position:fixed;top:0;left:0;right:0;z-index:50;">
+  <header class="nav-wrap">
     <input type="checkbox" id="navToggle" class="nav-toggle-input">
-    <div class="site-container d-flex align-items-center justify-content-between" style="height:4rem;">
-      <a href="index.html" style="font-weight:700;font-size:1rem;color:#181010;text-decoration:none;letter-spacing:-.02em;">Alessia Cattaneo</a>
+    <div class="site-container d-flex align-items-center justify-content-between nav-inner">
+      <a href="index.html" class="nav-brand">Alessia Cattaneo</a>
       <nav class="d-none d-md-flex align-items-center gap-4">
         <a href="index.html#servizi"  class="nav-a">Servizi</a>
         <a href="index.html#chi-sono" class="nav-a">Chi sono</a>
-        <a href="cv.html"             class="nav-a" style="color:#FF6F59;">CV</a>
+        <a href="cv.html"             class="nav-a nav-a-active">CV</a>
         <a href="contattami.html"     class="nav-a">Contattami</a>
       </nav>
       <div class="d-flex align-items-center gap-2">
-        <a href="contattami.html" class="btn-p d-none d-md-inline-flex" style="padding:10px 20px;font-size:.875rem;">Parliamo →</a>
-        <label for="navToggle" id="hamburger" class="d-flex d-md-none flex-column"
-               style="gap:.375rem;padding:.5rem;background:transparent;border:none;cursor:pointer;" aria-label="Apri menu">
+        <a href="contattami.html" class="btn-p btn-p-sm d-none d-md-inline-flex">Parliamo →</a>
+        <label for="navToggle" id="hamburger" class="d-flex d-md-none flex-column hamburger-btn"
+               aria-label="Apri menu">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -39,28 +39,28 @@
     <div class="mobile-menu" id="mobileMenu">
       <a href="index.html#servizi"  class="nav-a">Servizi</a>
       <a href="index.html#chi-sono" class="nav-a">Chi sono</a>
-      <a href="cv.html"             class="nav-a" style="color:#FF6F59;">CV</a>
+      <a href="cv.html"             class="nav-a nav-a-active">CV</a>
       <a href="contattami.html"     class="nav-a">Contattami</a>
     </div>
   </header>
 
-  <main id="contenuto-principale" style="padding-top:4rem;">
+  <main id="contenuto-principale" class="main-content">
 
     <!-- HERO -->
-    <section style="background:#F7F3F3;padding:4rem 0 3rem;">
+    <section class="section-hero">
       <div class="site-container">
         <span class="label">Curriculum Vitae</span>
-        <h1 class="heading-xl mt-3 mb-1" style="color:#181010;">Alessia Cattaneo</h1>
-        <p style="color:#FF6F59;font-weight:600;font-size:1.1rem;letter-spacing:-.01em;margin:0;">
+        <h1 class="heading-xl mt-3 mb-1">Alessia Cattaneo</h1>
+        <p class="page-subtitle">
           AI Automation Specialist &amp; Data Scientist
         </p>
       </div>
     </section>
 
-    <div style="height:1px;background:rgba(24,16,16,.07);"></div>
+    <div class="divider"></div>
 
     <!-- CONTENUTO -->
-    <section style="padding:3rem 0 5rem;background:#F7F3F3;">
+    <section class="section-content">
       <div class="site-container">
         <div class="row g-5">
 
@@ -68,48 +68,48 @@
           <div class="col-12 col-lg-4">
 
             <!-- Contatti -->
-            <div style="background:#FDFDFD;border:1px solid rgba(24,16,16,.07);border-radius:16px;padding:1.5rem;margin-bottom:1.5rem;">
+            <div class="cv-card">
               <div class="cv-section-title">Contatti</div>
               <div class="d-flex flex-column gap-3">
                 <div>
-                  <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:#C4ABA8;margin-bottom:.2rem;">Email</div>
-                  <a href="mailto:alessiacattaneo.developer@gmail.com" style="font-size:.875rem;color:#3D2420;word-break:break-all;">alessiacattaneo.developer@gmail.com</a>
+                  <div class="cv-meta-label">Email</div>
+                  <a href="mailto:alessiacattaneo.developer@gmail.com" class="cv-link-dark">alessiacattaneo.developer@gmail.com</a>
                 </div>
                 <div>
-                  <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:#C4ABA8;margin-bottom:.2rem;">LinkedIn</div>
-                  <a href="https://www.linkedin.com/in/alessia--cattaneo/" target="_blank" rel="noopener" style="font-size:.875rem;color:#FF6F59;">alessia--cattaneo</a>
+                  <div class="cv-meta-label">LinkedIn</div>
+                  <a href="https://www.linkedin.com/in/alessia--cattaneo/" target="_blank" rel="noopener" class="cv-link-accent">alessia--cattaneo</a>
                 </div>
                 <div>
-                  <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:#C4ABA8;margin-bottom:.2rem;">P.IVA</div>
-                  <span style="font-size:.875rem;color:#3D2420;">02802310066</span>
+                  <div class="cv-meta-label">P.IVA</div>
+                  <span class="cv-text-dark">02802310066</span>
                 </div>
                 <div>
-                  <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:#C4ABA8;margin-bottom:.2rem;">Posizione</div>
-                  <span style="font-size:.875rem;color:#3D2420;">Italia · Remote</span>
+                  <div class="cv-meta-label">Posizione</div>
+                  <span class="cv-text-dark">Italia · Remote</span>
                 </div>
               </div>
             </div>
 
             <!-- Lingue -->
-            <div style="background:#FDFDFD;border:1px solid rgba(24,16,16,.07);border-radius:16px;padding:1.5rem;margin-bottom:1.5rem;">
+            <div class="cv-card">
               <div class="cv-section-title">Lingue</div>
               <div class="d-flex flex-column gap-2">
                 <div class="d-flex justify-content-between align-items-center">
-                  <span style="font-size:.875rem;color:#3D2420;font-weight:500;">Italiano</span>
-                  <span style="font-size:.78rem;color:#FF6F59;font-weight:600;">Madrelingua</span>
+                  <span class="cv-lang-name">Italiano</span>
+                  <span class="cv-lang-level">Madrelingua</span>
                 </div>
                 <div class="d-flex justify-content-between align-items-center">
-                  <span style="font-size:.875rem;color:#3D2420;font-weight:500;">Inglese</span>
-                  <span style="font-size:.78rem;color:#7A6360;font-weight:500;">Professionale</span>
+                  <span class="cv-lang-name">Inglese</span>
+                  <span class="cv-lang-level-muted">Professionale</span>
                 </div>
               </div>
             </div>
 
             <!-- Competenze -->
-            <div style="background:#FDFDFD;border:1px solid rgba(24,16,16,.07);border-radius:16px;padding:1.5rem;">
+            <div class="cv-card">
               <div class="cv-section-title">Competenze tecniche</div>
 
-              <p style="font-size:.78rem;color:#7A6360;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.75rem;margin-top:.25rem;">AI &amp; Automation</p>
+              <p class="skill-category">AI &amp; Automation</p>
               <div class="mb-3">
                 <span class="skill-badge">n8n</span>
                 <span class="skill-badge">Make</span>
@@ -119,7 +119,7 @@
                 <span class="skill-badge">Prompt Engineering</span>
               </div>
 
-              <p style="font-size:.78rem;color:#7A6360;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.75rem;">API &amp; Modelli</p>
+              <p class="skill-category">API &amp; Modelli</p>
               <div class="mb-3">
                 <span class="skill-badge">OpenAI API</span>
                 <span class="skill-badge">Claude API</span>
@@ -128,7 +128,7 @@
                 <span class="skill-badge">HuggingFace</span>
               </div>
 
-              <p style="font-size:.78rem;color:#7A6360;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.75rem;">Programmazione</p>
+              <p class="skill-category">Programmazione</p>
               <div class="mb-3">
                 <span class="skill-badge">Python</span>
                 <span class="skill-badge">JavaScript</span>
@@ -136,7 +136,7 @@
                 <span class="skill-badge">HTML/CSS/SCSS</span>
               </div>
 
-              <p style="font-size:.78rem;color:#7A6360;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.75rem;">Data Science</p>
+              <p class="skill-category">Data Science</p>
               <div>
                 <span class="skill-badge">Pandas</span>
                 <span class="skill-badge">NumPy</span>
@@ -151,14 +151,14 @@
           <div class="col-12 col-lg-8">
 
             <!-- Profilo -->
-            <div style="background:rgba(255,111,89,.04);border:1px solid rgba(255,111,89,.14);border-radius:16px;padding:1.75rem;margin-bottom:2rem;">
-              <p style="font-size:1rem;color:#2C1A18;line-height:1.8;margin:0;">
+            <div class="cv-highlight-card">
+              <p class="cv-highlight-text">
                 AI Automation Specialist e Data Scientist con laurea in Informatica e Master in AI e Agenti AI per il Business. Progetto, sviluppo e mantengo soluzioni di automazione intelligente per PMI, startup, agenzie e freelance. Il mio approccio è data-driven: misuro il valore prima di costruire, e consegno soluzioni che durano nel tempo.
               </p>
             </div>
 
             <!-- Esperienza -->
-            <div style="background:#FDFDFD;border:1px solid rgba(24,16,16,.07);border-radius:16px;padding:1.75rem;margin-bottom:2rem;">
+            <div class="cv-section-card">
               <div class="cv-section-title">Esperienza professionale</div>
 
               <div class="cv-entry">
@@ -181,7 +181,7 @@
             </div>
 
             <!-- Formazione -->
-            <div style="background:#FDFDFD;border:1px solid rgba(24,16,16,.07);border-radius:16px;padding:1.75rem;margin-bottom:2rem;">
+            <div class="cv-section-card">
               <div class="cv-section-title">Formazione</div>
 
               <div class="cv-entry">
@@ -204,31 +204,31 @@
             </div>
 
             <!-- Servizi offerti -->
-            <div style="background:#FDFDFD;border:1px solid rgba(24,16,16,.07);border-radius:16px;padding:1.75rem;margin-bottom:2rem;">
+            <div class="cv-section-card">
               <div class="cv-section-title">Servizi offerti</div>
               <div class="row g-3">
                 <div class="col-12 col-sm-6">
-                  <div style="border:1px solid rgba(255,111,89,.15);border-radius:12px;padding:1.25rem;">
-                    <div style="font-weight:700;color:#181010;margin-bottom:.4rem;">Formazione AI</div>
-                    <p style="font-size:.8125rem;color:#7A6360;margin:0;line-height:1.6;">Workshop e percorsi per team e professionisti sull'uso corretto dell'AI.</p>
+                  <div class="service-mini-card">
+                    <div class="service-mini-title">Formazione AI</div>
+                    <p class="service-mini-desc">Workshop e percorsi per team e professionisti sull'uso corretto dell'AI.</p>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6">
-                  <div style="border:1px solid rgba(255,111,89,.15);border-radius:12px;padding:1.25rem;">
-                    <div style="font-weight:700;color:#181010;margin-bottom:.4rem;">AI Custom Build</div>
-                    <p style="font-size:.8125rem;color:#7A6360;margin:0;line-height:1.6;">Automazioni n8n, agenti AI, sistemi RAG e integrazioni API su misura.</p>
+                  <div class="service-mini-card">
+                    <div class="service-mini-title">AI Custom Build</div>
+                    <p class="service-mini-desc">Automazioni n8n, agenti AI, sistemi RAG e integrazioni API su misura.</p>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6">
-                  <div style="border:1px solid rgba(255,111,89,.15);border-radius:12px;padding:1.25rem;">
-                    <div style="font-weight:700;color:#181010;margin-bottom:.4rem;">Mantenimento AI</div>
-                    <p style="font-size:.8125rem;color:#7A6360;margin:0;line-height:1.6;">Hosting, monitoraggio, aggiornamenti e supporto continuativo post go-live.</p>
+                  <div class="service-mini-card">
+                    <div class="service-mini-title">Mantenimento AI</div>
+                    <p class="service-mini-desc">Hosting, monitoraggio, aggiornamenti e supporto continuativo post go-live.</p>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6">
-                  <div style="border:1px solid rgba(255,111,89,.15);border-radius:12px;padding:1.25rem;">
-                    <div style="font-weight:700;color:#181010;margin-bottom:.4rem;">Consulenza AI</div>
-                    <p style="font-size:.8125rem;color:#7A6360;margin:0;line-height:1.6;">Audit, strategia AI e roadmap per adottare l'AI nel modo giusto.</p>
+                  <div class="service-mini-card">
+                    <div class="service-mini-title">Consulenza AI</div>
+                    <p class="service-mini-desc">Audit, strategia AI e roadmap per adottare l'AI nel modo giusto.</p>
                   </div>
                 </div>
               </div>
@@ -250,14 +250,14 @@
   <!-- FOOTER -->
   <footer>
     <div class="site-container d-flex flex-wrap justify-content-between align-items-center gap-3">
-      <span style="font-weight:700;font-size:.9rem;color:#181010;letter-spacing:-.01em;">Alessia Cattaneo</span>
-      <div class="d-flex flex-wrap gap-4 align-items-center" style="font-size:.8rem;">
-        <a href="index.html"      style="color:#7A6360;text-decoration:none;">Home</a>
-        <a href="cv.html"         style="color:#FF6F59;text-decoration:none;">CV</a>
-        <a href="contattami.html" style="color:#7A6360;text-decoration:none;">Contattami</a>
-        <a href="privacy.html"    style="color:#7A6360;text-decoration:none;">Privacy</a>
+      <span class="footer-brand">Alessia Cattaneo</span>
+      <div class="d-flex flex-wrap gap-4 align-items-center footer-links">
+        <a href="index.html"      class="footer-a">Home</a>
+        <a href="cv.html"         class="footer-a footer-a-active">CV</a>
+        <a href="contattami.html" class="footer-a">Contattami</a>
+        <a href="privacy.html"    class="footer-a">Privacy</a>
       </div>
-      <p style="font-size:.78rem;color:#C4ABA8;margin:0;">© 2025 Alessia Cattaneo · P.IVA 02802310066</p>
+      <p class="footer-copy">© 2025 Alessia Cattaneo · P.IVA 02802310066</p>
     </div>
   </footer>
 

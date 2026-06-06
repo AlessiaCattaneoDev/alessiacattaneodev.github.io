@@ -1,0 +1,44 @@
+// ─── SCSS Tokens ─────────────────────────────────────────────────────────────
+$brand:            #FF6F59;
+$brand-light:      #F5897A;
+$brand-pale:       rgba(255,111,89,.08);
+$brand-dark:       #C96B5A;
+
+$ink-900:          #181010;
+$ink-800:          #231515;
+$ink-700:          #2C1A18;
+$ink-600:          #3D2420;
+$ink-500:          #7A6360;
+$ink-300:          #C4ABA8;
+$ink-100:          #FDFDFD;
+
+$font-base:        'IBM Plex Sans', sans-serif;
+
+$site-px:          1.5rem;
+$site-px-md:       2.5rem;
+
+// ─── CSS Custom Properties ────────────────────────────────────────────────────
+:root {
+  --bg:          #F7F3F3;
+  --fg:          #{$ink-900};
+  --muted:       #{$ink-500};
+  --surface:     #{$ink-100};
+  --bdr:         rgba(24,16,16,.07);
+
+  --nav-bg:      rgba(247,243,243,.92);
+  --nav-bdr:     rgba(24,16,16,.07);
+  --mmenu-bg:    rgba(247,243,243,.97);
+  --mmenu-bdr:   rgba(24,16,16,.06);
+  --mitem-bdr:   rgba(24,16,16,.05);
+  --mnav-fg:     #{$ink-600};
+
+  --btnp-sh:     0 4px 24px rgba(255,111,89,.28), 0 1px 4px rgba(0,0,0,.12);
+  --btnp-sh-hov: 0 8px 36px rgba(255,111,89,.38), 0 2px 8px rgba(0,0,0,.12);
+  --btng-fg:     #{$ink-600};
+  --btng-bdr:    rgba(24,16,16,.2);
+  --nava-hov:    #{$ink-900};
+
+  --hero-bg:     radial-gradient(ellipse 75% 55% at 100% 0%, rgba(255,111,89,.09) 0%, transparent 60%),
+                 radial-gradient(ellipse 55% 45% at 0% 100%, rgba(122,51,40,.05) 0%, transparent 55%),
+                 #F7F3F3;
+}

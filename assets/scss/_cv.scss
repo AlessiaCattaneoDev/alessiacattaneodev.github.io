@@ -1,0 +1,69 @@
+@use 'variables' as *;
+
+// ─── Section title ────────────────────────────────────────────────────────────
+.cv-section-title {
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: $brand;
+  border-bottom: 1px solid rgba(24,16,16,.08);
+  padding-bottom: .75rem;
+  margin-bottom: 1.5rem;
+}
+
+// ─── Timeline entries ─────────────────────────────────────────────────────────
+.cv-entry {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(24,16,16,.05);
+
+  &:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+}
+
+.cv-entry-date  { font-size: .78rem; color: $ink-500; font-weight: 500; }
+.cv-entry-title { font-weight: 700; color: $ink-900; font-size: 1rem; margin: .2rem 0; }
+.cv-entry-org   { font-size: .875rem; color: $brand-dark; font-weight: 500; }
+.cv-entry-desc  { font-size: .875rem; color: $ink-500; line-height: 1.7; margin-top: .5rem; }
+
+// ─── Sidebar cards ────────────────────────────────────────────────────────────
+.cv-card {
+  background: var(--surface);
+  border: 1px solid var(--bdr);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cv-meta-label       { font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; color: $ink-300; margin-bottom: .2rem; }
+.cv-link-dark        { font-size: .875rem; color: $ink-600; word-break: break-all; }
+.cv-link-accent      { font-size: .875rem; color: $brand; }
+.cv-text-dark        { font-size: .875rem; color: $ink-600; }
+.cv-lang-name        { font-size: .875rem; color: $ink-600; font-weight: 500; }
+.cv-lang-level       { font-size: .78rem; color: $brand; font-weight: 600; }
+.cv-lang-level-muted { font-size: .78rem; color: var(--muted); font-weight: 500; }
+.skill-category      { font-size: .78rem; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; margin-bottom: .75rem; }
+
+// ─── Main column cards ────────────────────────────────────────────────────────
+.cv-highlight-card {
+  background: rgba(255,111,89,.04);
+  border: 1px solid rgba(255,111,89,.14);
+  border-radius: 16px;
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.cv-highlight-text { font-size: 1rem; color: $ink-700; line-height: 1.8; margin: 0; }
+
+.cv-section-card {
+  background: var(--surface);
+  border: 1px solid var(--bdr);
+  border-radius: 16px;
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+// ─── Service mini cards ───────────────────────────────────────────────────────
+.service-mini-card  { border: 1px solid rgba(255,111,89,.15); border-radius: 12px; padding: 1.25rem; }
+.service-mini-title { font-weight: 700; color: var(--fg); margin-bottom: .4rem; }
+.service-mini-desc  { font-size: .8125rem; color: var(--muted); margin: 0; line-height: 1.6; }

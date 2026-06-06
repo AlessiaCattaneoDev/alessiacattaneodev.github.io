@@ -1,0 +1,33 @@
+@use 'variables' as *;
+
+.hero-wrap {
+  background: var(--hero-bg);
+  padding: 6rem 0 5rem;
+}
+
+.main-content { padding-top: 4rem; }
+.divider      { height: 1px; background: var(--bdr); }
+
+// ─── Stats strip ──────────────────────────────────────────────────────────────
+.stats-wrap { background: var(--surface); padding: 3.5rem 0; }
+
+.stat-num {
+  font-weight: 800;
+  font-size: 2.5rem;
+  letter-spacing: -.04em;
+  color: var(--fg);
+  margin-bottom: .4rem;
+}
+
+.stat-desc { color: var(--muted); font-size: .875rem; line-height: 1.6; margin: 0; }
+
+// ─── Hero copy ────────────────────────────────────────────────────────────────
+.hero-heading { max-width: 680px; }
+
+.hero-desc {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: 520px;
+  margin-bottom: 2rem;
+}

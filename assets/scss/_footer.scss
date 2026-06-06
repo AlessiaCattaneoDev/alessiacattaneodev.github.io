@@ -1,0 +1,12 @@
+@use 'variables' as *;
+
+footer {
+  border-top: 1px solid var(--bdr);
+  padding: 2.5rem 0;
+}
+
+.footer-brand    { font-weight: 700; font-size: .9rem; color: var(--fg); letter-spacing: -.01em; }
+.footer-links    { font-size: .8rem; }
+.footer-a        { color: var(--muted); text-decoration: none; }
+.footer-a-active { color: $brand; text-decoration: none; }
+.footer-copy     { font-size: .78rem; color: $ink-300; margin: 0; }

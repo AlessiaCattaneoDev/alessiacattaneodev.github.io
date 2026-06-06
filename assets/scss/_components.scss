@@ -1,0 +1,105 @@
+@use 'variables' as *;
+
+// ─── Buttons ──────────────────────────────────────────────────────────────────
+.btn-p {
+  display: inline-flex;
+  align-items: center;
+  background: $brand;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  border-radius: 10px;
+  padding: 13px 26px;
+  font-size: .9375rem;
+  text-decoration: none;
+  box-shadow: var(--btnp-sh);
+  border: none;
+  cursor: pointer;
+  font-family: $font-base;
+  transition: background .2s ease, transform .2s ease, box-shadow .2s ease;
+
+  &:hover {
+    background: $brand-light;
+    transform: translateY(-2px);
+    box-shadow: var(--btnp-sh-hov);
+    color: #fff;
+  }
+  &:active        { transform: translateY(0); }
+  &:focus-visible { outline: 2px solid $brand; outline-offset: 3px; }
+}
+
+.btn-g {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--btng-fg);
+  border: 1px solid var(--btng-bdr);
+  font-weight: 700;
+  letter-spacing: -.01em;
+  border-radius: 10px;
+  padding: 13px 26px;
+  font-size: .9375rem;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: $font-base;
+  transition: color .2s ease, border-color .2s ease, background .2s ease;
+
+  &:hover {
+    color: $ink-900;
+    border-color: rgba(24,16,16,.4);
+    background: rgba(24,16,16,.03);
+  }
+  &:focus-visible { outline: 2px solid $ink-900; outline-offset: 3px; }
+}
+
+.btn-center { justify-content: center; }
+
+// ─── Label ────────────────────────────────────────────────────────────────────
+.label {
+  display: inline-block;
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: $brand;
+}
+
+// ─── Accent ───────────────────────────────────────────────────────────────────
+.accent { color: $brand; font-style: normal; }
+
+// ─── Skip link ────────────────────────────────────────────────────────────────
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  &:focus { position: static; width: auto; height: auto; }
+}
+
+// ─── Info card ────────────────────────────────────────────────────────────────
+.info-card {
+  background: var(--surface);
+  border: 1px solid var(--bdr);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+
+.info-card-title { color: var(--fg); font-size: .875rem; }
+.info-card-text  { color: var(--muted); font-size: .875rem; margin: .3rem 0 0; }
+
+// ─── Skill badge ──────────────────────────────────────────────────────────────
+.skill-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  background: rgba(24,16,16,.04);
+  border: 1px solid rgba(24,16,16,.08);
+  border-radius: 7px;
+  font-size: .8rem;
+  color: $ink-600;
+  font-weight: 500;
+  margin: 3px;
+}

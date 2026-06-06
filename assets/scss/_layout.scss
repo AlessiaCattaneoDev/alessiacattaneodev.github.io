@@ -1,0 +1,11 @@
+@use 'variables' as *;
+
+.site-container {
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: $site-px;
+
+  @media (min-width: 768px) {
+    padding-inline: $site-px-md;
+  }
+}
