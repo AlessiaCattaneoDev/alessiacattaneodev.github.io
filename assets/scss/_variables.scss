@@ -1,4 +1,4 @@
-// ─── SCSS Tokens ─────────────────────────────────────────────────────────────
+//  SCSS Tokens 
 $brand:            #FF6F59;
 $brand-light:      #F5897A;
 $brand-pale:       rgba(255,111,89,.08);
@@ -17,7 +17,7 @@ $font-base:        'IBM Plex Sans', sans-serif;
 $site-px:          1.5rem;
 $site-px-md:       2.5rem;
 
-// ─── CSS Custom Properties ────────────────────────────────────────────────────
+//  CSS Custom Properties 
 :root {
   --bg:          #F7F3F3;
   --fg:          #{$ink-900};

@@ -1,6 +1,6 @@
 @use 'variables' as *;
 
-// ─── Form elements ────────────────────────────────────────────────────────────
+//  Form elements 
 .contact-form-label {
   display: block;
   font-size: .85rem;
@@ -47,7 +47,7 @@ textarea.contact-input { resize: vertical; min-height: 140px; }
   &:disabled { opacity: .65; cursor: not-allowed; transform: none; }
 }
 
-// ─── Contact page layout ──────────────────────────────────────────────────────
+//  Contact page layout 
 .contact-intro {
   color: var(--muted);
   font-size: 1.05rem;
@@ -63,13 +63,13 @@ textarea.contact-input { resize: vertical; min-height: 140px; }
   padding: 2.5rem;
 }
 
-// ─── Privacy consent ──────────────────────────────────────────────────────────
+//  Privacy consent 
 .privacy-row      { font-size: .82rem; color: var(--muted); line-height: 1.6; }
 .privacy-checkbox { margin-top: 3px; accent-color: $brand; flex-shrink: 0; }
 .link-accent      { color: $brand; }
 .form-msg         { display: none; margin-top: 1rem; font-size: .875rem; }
 
-// ─── Info sidebar ─────────────────────────────────────────────────────────────
+//  Info sidebar 
 .contact-icon {
   width: 40px;
   height: 40px;
@@ -85,7 +85,7 @@ textarea.contact-input { resize: vertical; min-height: 140px; }
 .contact-info-text   { font-size: .9rem; color: $ink-600; word-break: break-all; }
 .contact-info-accent { font-size: .9rem; color: $brand; }
 
-// ─── Highlight card ───────────────────────────────────────────────────────────
+//  Highlight card 
 .highlight-card-title { font-weight: 700; color: var(--fg); font-size: .95rem; margin-bottom: 1rem; }
 .list-item-dark       { font-size: .875rem; color: $ink-600; }
 .list-arrow           { color: $brand; font-weight: 700; flex-shrink: 0; }

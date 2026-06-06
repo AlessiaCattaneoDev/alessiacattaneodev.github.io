@@ -1,6 +1,6 @@
 @use 'variables' as *;
 
-// ─── Buttons ──────────────────────────────────────────────────────────────────
+//  Buttons 
 .btn-p {
   display: inline-flex;
   align-items: center;
@@ -55,7 +55,7 @@
 
 .btn-center { justify-content: center; }
 
-// ─── Label ────────────────────────────────────────────────────────────────────
+//  Label 
 .label {
   display: inline-block;
   font-size: .7rem;
@@ -65,10 +65,10 @@
   color: $brand;
 }
 
-// ─── Accent ───────────────────────────────────────────────────────────────────
+//  Accent 
 .accent { color: $brand; font-style: normal; }
 
-// ─── Skip link ────────────────────────────────────────────────────────────────
+//  Skip link 
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -80,7 +80,7 @@
   &:focus { position: static; width: auto; height: auto; }
 }
 
-// ─── Info card ────────────────────────────────────────────────────────────────
+//  Info card 
 .info-card {
   background: var(--surface);
   border: 1px solid var(--bdr);
@@ -91,7 +91,7 @@
 .info-card-title { color: var(--fg); font-size: .875rem; }
 .info-card-text  { color: var(--muted); font-size: .875rem; margin: .3rem 0 0; }
 
-// ─── Skill badge ──────────────────────────────────────────────────────────────
+//  Skill badge 
 .skill-badge {
   display: inline-block;
   padding: 5px 12px;

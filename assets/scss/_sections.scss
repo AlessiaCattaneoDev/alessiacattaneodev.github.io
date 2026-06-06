@@ -1,12 +1,12 @@
 @use 'variables' as *;
 
-// ─── Layout variants ──────────────────────────────────────────────────────────
+//  Layout variants 
 .section-pad     { padding: 5rem 0; }
 .section-bg      { background: var(--bg); }
 .section-hero    { background: var(--bg); padding: 4rem 0 3rem; }
 .section-content { padding: 3rem 0 5rem; background: var(--bg); }
 
-// ─── Text styles ──────────────────────────────────────────────────────────────
+//  Text styles 
 .section-desc {
   color: var(--muted);
   font-size: 1.05rem;
@@ -33,7 +33,7 @@
 .text-muted-body { color: var(--muted); line-height: 1.8; margin-bottom: 1rem; }
 .text-dark-body  { color: $ink-600; line-height: 1.8; margin-bottom: 1.5rem; }
 
-// ─── CTA ──────────────────────────────────────────────────────────────────────
+//  CTA 
 .cta-desc {
   color: var(--muted);
   font-size: 1.05rem;
