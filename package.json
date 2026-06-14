@@ -1,7 +1,7 @@
 {
   "name": "start2impact-website",
   "version": "1.0.0",
-  "description": "Sito personale di Alessia Cattaneo — AI Automation Specialist & Data Scientist",
+  "description": "Sito personale di Alessia Cattaneo - AI Automation Specialist & Data Scientist",
   "scripts": {
     "build": "sass assets/scss/main.scss assets/css/bundle.css --style compressed --no-source-map",
     "watch": "sass assets/scss/main.scss assets/css/bundle.css --watch",

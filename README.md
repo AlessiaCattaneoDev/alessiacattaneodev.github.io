@@ -1,4 +1,4 @@
-# Alessia Cattaneo — Website
+# Alessia Cattaneo - Website
 
 Sito personale di Alessia Cattaneo, AI Specialist & Data Scientist.
 
@@ -11,35 +11,42 @@ Sito personale di Alessia Cattaneo, AI Specialist & Data Scientist.
 ├── contattami.html     # Pagina contatti con modulo EmailJS
 ├── privacy.html        # Privacy & Cookie Policy
 ├── assets/
+│   ├── favicon.svg      # Favicon del sito
+│   ├── og-image.svg     # Immagine social (Open Graph)
 │   ├── css/
-│   │   └── bundle.css  # CSS compilato (custom, nessuna libreria esterna)
-│   └── js/
-│       └── email.js    # Invio email tramite EmailJS
-└── src/
-    └── scss/
-        ├── main.scss        # Entry point SCSS
-        ├── _variables.scss  # Token di design (colori brand, font, spacing)
-        └── _components.scss # Componenti UI e utility classes
+│   │   └── bundle.css   # CSS compilato dagli SCSS (stile brand)
+│   ├── js/
+│   │   └── email.js     # Invio email tramite EmailJS
+│   └── scss/
+│       ├── main.scss        # Entry point SCSS
+│       ├── _variables.scss  # Token di design (colori brand, font, spacing)
+│       └── _*.scss          # Reset, tipografia, componenti, sezioni, pagine
 ```
 
 ## Tech stack
 
 - HTML5 semantico
-- CSS custom — grid responsiva, utility classes, componenti (nessuna libreria CSS esterna)
+- [Bootstrap 5.3](https://getbootstrap.com/) (build `grid` + `utilities`, via CDN) per griglia responsiva e utility classes
+- SCSS custom (compilato con [Dart Sass](https://sass-lang.com/)) per il design system e i componenti brand
 - Font: [IBM Plex Sans](https://fonts.google.com/specimen/IBM+Plex+Sans) via Google Fonts
 - JavaScript: solo [EmailJS](https://www.emailjs.com/) per il modulo di contatto
 
 ## CSS
 
-Il file `assets/css/bundle.css` è il CSS del progetto, scritto senza dipendenze esterne. Include:
+Il layout usa **Bootstrap** (caricato da CDN nelle pagine HTML) per il grid system a 12 colonne e le utility classes (`row`, `col-*`, `d-flex`, `gap-*`, spacing, ecc.). Vengono incluse solo le build `bootstrap-grid` e `bootstrap-utilities`, così da sfruttare il framework senza il Reboot che sovrascriverebbe lo stile brand.
 
-- **CSS custom properties** — variabili di design per colori, ombre, sfondi
-- **Grid system** a 12 colonne, mobile-first (breakpoint: `sm` 576px, `md` 768px, `lg` 992px)
-- **Utility classes** — display, flexbox, spacing, text-align
-- **Componenti** — navbar, pulsanti, form contatti, card servizi, pagina CV
+Sopra Bootstrap, lo stile su misura è scritto in SCSS (cartella `assets/scss/`) e compilato in `assets/css/bundle.css`. Include:
+
+- **CSS custom properties** - variabili di design per colori, ombre, sfondi
+- **Componenti** - navbar, pulsanti, form contatti, card servizi, pagina CV, privacy
 - **Menu mobile** via CSS checkbox toggle (nessun JS)
 
-Per modificare gli stili, aggiornare i file in `src/scss/` e ricompilare in `assets/css/bundle.css`. Non è presente un build system automatico: usare `sass src/scss/main.scss assets/css/bundle.css` oppure modificare bundle.css direttamente.
+Per modificare gli stili, aggiornare i file in `assets/scss/` e ricompilare con gli script npm:
+
+```bash
+npm run build   # build una tantum (compressa)
+npm run dev     # watch in sviluppo (espanso)
+```
 
 ## Modulo di contatto
 
@@ -51,4 +58,4 @@ Il menu mobile funziona tramite un `<input type="checkbox">` nascosto e il selet
 
 ## Deployment
 
-Sito statico puro — compatibile con GitHub Pages, Netlify, Vercel o qualsiasi hosting di file statici.
+Sito statico puro - compatibile con GitHub Pages, Netlify, Vercel o qualsiasi hosting di file statici.

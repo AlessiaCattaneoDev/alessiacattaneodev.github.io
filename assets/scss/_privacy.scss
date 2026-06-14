@@ -47,3 +47,31 @@
 }
 
 .privacy-footer-note { font-size: .8rem; color: $ink-300; text-align: center; }
+
+//  Privacy article content
+.privacy-content {
+  h2 { font-size: 1.1rem; font-weight: 700; color: $ink-900; margin: 2.5rem 0 .75rem; }
+  h3 { font-size: .95rem; font-weight: 600; color: $ink-700; margin: 1.5rem 0 .4rem; }
+  p  { color: $ink-700; font-size: .925rem; margin-bottom: .85rem; line-height: 1.75; }
+  ul { padding-left: 1.25rem; margin-bottom: .85rem; }
+  li { color: $ink-700; font-size: .925rem; margin-bottom: .35rem; }
+  a  { color: $brand; text-decoration: underline; text-underline-offset: 3px; }
+  hr { border: none; border-top: 1px solid rgba(24, 16, 16, .08); margin: 2rem 0; }
+
+  table { width: 100%; border-collapse: collapse; font-size: .875rem; margin-bottom: 1rem; }
+  th {
+    background: $brand-pale;
+    color: $ink-900;
+    font-weight: 600;
+    text-align: left;
+    padding: .6rem .85rem;
+    border: 1px solid rgba(24, 16, 16, .09);
+  }
+  td {
+    padding: .55rem .85rem;
+    border: 1px solid rgba(24, 16, 16, .09);
+    color: $ink-700;
+    vertical-align: top;
+  }
+  tr:nth-child(even) td { background: rgba(24, 16, 16, .02); }
+}

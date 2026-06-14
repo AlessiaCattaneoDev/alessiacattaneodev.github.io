@@ -5,9 +5,9 @@
 @use 'reset';
 @use 'typography';
 
-//  3. Layout system 
-@use 'grid';
-@use 'utilities';
+//  3. Layout system
+//  Grid & utility classes are provided by Bootstrap (grid + utilities builds,
+//  loaded via CDN in the HTML <head>). Only project-specific layout lives here.
 @use 'layout';
 
 //  4. Reusable components 
